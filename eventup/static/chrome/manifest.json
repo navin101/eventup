@@ -1,0 +1,14 @@
+{
+   "background_page": "background.html",
+   "description": "Tools for StyleUp Mavens.",
+   "icons": {
+      "16": "icon16.png"
+   },
+  "browser_action": {
+    "default_icon": "icon16.png"
+  },
+   "minimum_chrome_version": "6",
+   "name": "StyleUp",
+   "permissions": [ "contextMenus", "tabs" ],
+   "version": "1.0"
+}

@@ -1,0 +1,2 @@
+USER=postgres
+DB=kendall

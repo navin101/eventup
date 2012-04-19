@@ -1,0 +1,35 @@
+<script>
+
+function getSelectedText()
+{
+    chrome.tabs.getCurrent(
+        function(){
+            alert("1 " + window.getSelection());
+            alert("2 " + document.getSelection());
+            alert("3 " + document.selection);
+        }
+    );
+/*
+    var txt = '';
+    if (window.getSelection){
+        txt = window.getSelection();
+    } else if (document.getSelection) {
+        txt = document.getSelection();
+    } else if (document.selection) {
+        txt = document.selection.createRange().text;
+    }
+    return txt;
+*/
+}
+
+function suggestLook(info)
+{
+// alert(info.srcUrl);
+ var selectedText = getSelectedText();
+ var searchstring = info.selectionText;
+ chrome.tabs.create({url: "http://maps.google.com/maps?q=" + searchstring})
+}
+
+chrome.contextMenus.create({title: "StyleUp: Suggest this look", contexts:["image"], onclick: suggestLook});
+
+</script>

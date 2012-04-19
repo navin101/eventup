@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>EventUp | {% block title %}{% endblock %}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" href="/static/css/blitzer/jquery-ui-1.8.18.custom.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/menusm.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/site.css" />
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Great+Vibes'>
+<link rel='stylesheet' type='text/css' href='/static/css/screen.css'>
+
+<script type="text/javascript" src="/static/script/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/static/script/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="/static/script/menusm.js"></script>
+<script type="text/javascript" src="/static/script/scripts.js"></script>
+<script src="//cdn.optimizely.com/js/32650498.js"></script>
+
+<!-- start Mixpanel -->
+<script type="text/javascript">
+(function(d,c){var a,b,g,e;a=d.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===d.location.protocol?"https:":"http:")+'//api.mixpanel.com/site_media/js/api/mixpanel.2.js';b=d.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b);c._i=[];c.init=function(a,d,f){var b=c;"undefined"!==typeof f?b=c[f]=[]:f="mixpanel";g="disable track track_links track_forms register register_once unregister identify name_tag set_config".split(" ");for(e=0;e<
+g.length;e++)(function(a){b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,0)))}})(g[e]);c._i.push([a,d,f])};window.mixpanel=c})(document,[]);
+mixpanel.init("2e60d0f7d50abd1bcc99514a899356c8");
+mixpanel.name_tag('{{request.user.userprofile.fb_user.name}}');
+</script>
+<!-- end Mixpanel -->
+
+</head>
+<body>
+
+<div id="main_page">
+  <div class="main_resize">
+    <div class="header">
+      <div class="logo">
+        <h1><a href="/">EventUp</a></h1>
+      </div>
+      <div id="topnav">
+            {% if request.user.is_authenticated %}
+                <ul class="menusm">
+                  <li class="ms_top"><a href="/picks">{{ today|date:"l" }}'s Style</a></li>
+                  <li class="ms_top"><a href="/profile">My Profile</a></li>
+                  <li class="ms_top"><a href="/logout">Logout</a></li>
+                </ul>
+
+                <img src="{{user.userprofile.fb_image_url}}" class="profile_picture">
+            {% else %}
+                <ul class="menusm">
+                  <li class="ms_top"><a href="/about">About EventUp</a></li>
+<!--
+                  <li class="ms_top ms_last"><a href="/help">Need Help?</a></li>
+-->
+                </ul>
+                <!--/searchform -->
+                <div class="login">
+                    <a href="/facebook/login"><img src="{{STATIC_URL}}/img/facebook.png?x=1"></a>
+                </div>
+            {% endif %}
+        </div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+      <div class="clr"></div>
+
+    <div>
+
+    {% block title_pre %}{% endblock %}</h2>
+                
+      <div class="block_top_text"> 
+
+        <h2>{% block title_page %}{% endblock %}</h2>
+
+        </div>
+        
+        <div class="block_top_text block_content"> 
+            {% block content %}{% endblock %}
+            <br><br>
+        </div>
+                
+    </div>
+    
+
+
+  </div>
+  
+<!-- 
+<div class="block_top">
+
+  <div class="col-small">
+    <h3>Twitter</h3>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#eeeeee',
+      color: '#333333'
+    },
+    tweets: {
+      background: '#eeeeee',
+      color: '#333333',
+      links: '#0731eb'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('thekendalist').start();
+</script>
+
+    </div>
+
+
+  <div class="col-small last">
+    <h3>Pinterest stream</h3>
+   <a href="#"><img src="/static/img/flickr_1.jpg" alt="img" width="50" height="50" border="0" class="fkicr" /></a>
+    <a href="#"><img src="/static/img/flickr_2.jpg" alt="img" width="50" height="50" border="0" class="fkicr" /></a>
+     <a href="#"><img src="/static/img/flickr_3.jpg" alt="img" width="50" height="50" border="0" class="fkicr" /></a>
+      <a href="#"><img src="/static/img/flickr_4.jpg" alt="img" width="50" height="50" border="0" class="fkicr" /></a>
+       <a href="#"><img src="/static/img/flickr_5.jpg" alt="img" width="50" height="50" border="0" class="fkicr" /></a>
+        <a href="#"><img src="/static/img/flickr_6.jpg" alt="img" width="50" height="50" border="0" class="fkicr" /></a>
+   
+    <div class="clr"></div>
+  </div>
+-->
+<!--  <div class= "col-small"> -->
+	<div class = "footer">
+    <h3>Share with us!</h3> 
+	If you love Event Up, keep in touch and help us spread the word!
+	
+    <a href="#"><img src="/static/img/rss_1.png" alt="img" width="24" height="24" border="0" /></a>
+
+<!--
+    <a href="#"><img src="/static/img/rss_2.png" alt="img" width="24" height="24" border="0" /></a>
+    <a href="#"><img src="/static/img/rss_3.png" alt="img" width="24" height="24" border="0" /></a>
+    <a href="#"><img src="/static/img/rss_4.png" alt="img" width="24" height="24" border="0" /></a>
+-->
+    <a href="#"><img src="/static/img/rss_5.png" alt="img" width="24" height="24" border="0" /></a>
+    <a href="#"><img src="/static/img/rss_6.png" alt="img" width="24" height="24" border="0" /></a>
+    <br><br>
+    <a href="http://mixpanel.com/f/partner"><img src="http://mixpanel.com/site_media/images/partner/badge_blue.png" alt="Real Time Web Analytics" /></a>
+  </div>
+  <div class="clr"></div>
+</div>
+  <div class="clr"></div>
+</div>
+  <div class="clr"></div>
+</div>
+<div class="footer">
+© 2012 Event Up. All Rights Reserved. 
+<div class="clr"></div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* TemplateAccess.com Template */
+/* CSS Document */
+
+/* DESIGN TOPNAV (mainmenu) */
+#topnav { z-index:200; margin:0; float:right;  padding:0; font-size:14px;  line-height:14px; width:auto; }
+/* level 0 */
+#topnav ul.menusm { padding:30px 20px 0 0; float:left; }
+#topnav ul li.ms_top { padding:0; float:left; border-right:1px dashed #b6b6b6; }
+#topnav ul li a.ms_top {  display:block;  height:14px; margin:0; padding:5px 13px; color:#737373; text-decoration: none; text-transform: none; font-weight: bold;}
+#topnav ul li.current_page_item a.ms_top { color:#2799d8;   text-decoration:none; }
+#topnav ul li a.ms_top.ms_hover {  color:#2799d8;  text-decoration: none; }
+/* level 1 */
+#topnav ul li ul { z-index:220; margin:0; padding:0; top:22px; left:-20px; font-size:12px; background:#ededed; text-transform: none; font-weight: normal; }
+#topnav ul li ul li { padding:4px 0; border-bottom:1px solid #fff; border-top:1px solid #e5e5e5;}
+#topnav ul li ul li a { text-decoration:none; display:block; margin:0; border:0; padding:5px 5px; width:108px; color:#999;  }
+#topnav ul li ul li.ms_last a { border:0; }
+#topnav ul li ul li a.ms_hover {  color:#5f656d; text-decoration:none; }
+#topnav ul li ul li ul { top:-7px; left:120px; }
+/* have_submenu */
+#topnav ul li a.ms_top.ms_havesubmenu { }
+#topnav ul li.current_page_item a.ms_top.ms_havesubmenu { }
+#topnav ul li a.ms_top.ms_havesubmenu.ms_hover { }
+#topnav ul li ul li a.ms_havesubmenu {  }
+#topnav ul li ul li a.ms_havesubmenu.ms_hover { }
+
+
+/* DO NOT EDIT!!! */
+ul.menusm { list-style:none; }
+ul.menusm li { cursor:pointer; position:relative; }
+ul.menusm li a { position:relative; }
+ul.menusm li ul { display:none; position:absolute; list-style:none; height:auto; }
+ul.menusm li ul li ul { position:absolute; list-style:none; }
+#mstabs ul.bookmarks { margin:0; padding:0; list-style:none; }
+#mstabs ul.bookmarks li { float:left; }
+#mstabs ul.bookmarks li a { display:block; text-decoration:none; outline:none; }
+#mstabs ul.bookmarks li a.ms_active { }
+#mstabs ul.menusm { }
+#mstabs ul.menusm li a { display:block; margin:0; }
+#mstabs ul.menusm li ul { position:relative; margin:0; padding:0 0 4px; }

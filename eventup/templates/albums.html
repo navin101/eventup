@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Select Albums{% endblock %}
+{% block title_page %}Select Albums{% endblock %}
+
+{% block content %}
+
+Style Up uses your Facebook photos to see what styles work for you and suggest incredible fashion tips and finds. 
+<br><br>
+Click on the albums below that you want Kendall to work from. (Again, no creepsters, promise!) 
+
+<br><br>
+
+<center>
+{% for a in albums %}
+    {% if a.cover_photo %}
+    <div class="album_combo">
+        <div class="album_frame">
+            <i class="album_photo" style="background-image:url(https://graph.facebook.com/{{a.id}}/picture?type=album&access_token={{user.get_profile.fb_user.access_token}});"></i>
+        </div>
+        <div class="album_title">{{a.name}}</div>
+    </div>
+    {% endif %}
+{% empty %}
+    
+{% endfor %}
+</center>
+
+
+{% endblock %}

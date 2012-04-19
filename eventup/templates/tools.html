@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Style This{% endblock %}
+{% block title_page %}Style This{% endblock %}
+
+{% block content %}
+
+<div class="button_frame">
+<a class="button" onclick="alert('Drag me to the bookmarks bar'); return false;" href="javascript:void((function(){var e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','{{settings.WEB_PATH}}/static/script/tools.js?r='+Math.random()*99999999);document.body.appendChild(e)})());" title="Style This" id="BigStyleItButton"><strong>Style This</strong><span></span></a>
+
+<span id="button_instructions">&larr;&nbsp;&nbsp;Add this link to your Bookmarks Bar</span>
+</div>
+
+<br><br>
+
+<p>To install the "Style This" button in Chrome:</p>
+
+<br>
+
+<div id="InstallationInstructions" class="small"><ol><li>Display your Bookmarks by clicking the <strong>Wrench Icon &gt; Bookmarks &gt; Show Bookmarks Bar</strong></li><li>Drag the "Style This" button to your Bookmarks bar</li><li>When you are browsing the web, push the "Style This" button to pin an image</li></ol></div>
+
+{% endblock %}

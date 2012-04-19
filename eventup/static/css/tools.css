@@ -1,0 +1,163 @@
+.noscroll {
+    overflow: hidden;
+}
+
+.overlay
+{
+    background-color: #000;
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    overflow-y: scroll;
+    text-align: center;
+    top: 0;
+    z-index: 99998;
+    font-family: Georgia,Arial,Tahoma,Verdana;
+}
+
+.close
+{
+    background-color: #eeeeee;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    font-family: Georgia,Arial,Tahoma,Verdana;
+    font-size: 18px;
+    font-weight:bold;
+    color: #FF0000;
+}
+
+.frame
+{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+    width: 90%;
+    z-index: 99999;
+    font-family: Georgia,Arial,Tahoma,Verdana;
+    font-size: 20px;
+    color: #000000;
+    overflow-y: scroll;
+    position: static;
+}
+
+td.left
+{
+    vertical-align: top;
+    text-align: right;
+}
+
+td.right
+{
+    vertical-align: top;
+    text-align: left;
+    margin: 10px;
+}
+
+.item_thumb_holder {
+    float: left;
+}
+
+.item_thumb
+{
+    display: inline;
+    height: 220px;
+    width: 10%;
+    padding: 10px;
+}
+
+span.item_thumb img
+{
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+.thumb_dim {
+    display: block;
+    font-size: .7em;
+}
+
+span.item_thumb img:hover {
+    background: #EEE;
+    color: #3F3F3F;
+    text-decoration: none;
+}
+
+.item_profile tr td img
+{
+    border: 1px solid #eeeeee;
+    padding: 4px;
+    max-width: 400px;
+    margin: 10px;
+}
+
+.item_profile tr td img
+{
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    max-width: 400px;
+    margin: 10px;
+}
+
+fieldset {
+  padding: 1em;
+  font-family: Georgia,Arial,Tahoma,Verdana;
+  margin: 0 0 1.5em 0;
+  border: 1px solid #F1F1F1;
+}
+  
+legend {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+  
+li {
+  list-style: none;
+  margin-top: 8px;
+}  
+  
+label {
+    font-size: .8em;
+  text-align: left;
+  vertical-align: top;
+  display: block;
+  margin: 8px 0px 6px 0px;
+}
+
+label:after { content: ": " }
+  
+input, textarea
+{
+    border: 1px solid #cccccc;
+    font-size: 12px;
+    margin-left: 4px;
+    padding: 4px;
+}
+
+.button {
+    border: 1px solid #660000;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 8px 12px 8px 12px;
+    color: black;
+    background: red;
+    margin: 4px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #FF0000;
+    text-decoration: none;
+}
+
+.buttons {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+}

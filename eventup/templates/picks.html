@@ -1,0 +1,270 @@
+{% extends "base.html" %}
+
+{% block title %}Today's Style{% endblock %}
+{% block title_page %}Today's Style{% endblock %}
+
+{% block content %}
+
+ {{items.0.main}}
+
+<br><br>
+
+<table style="BORDER-BOTTOM:#ffffff 1px solid;BORDER-LEFT:#ffffff 1px solid;BACKGROUND-COLOR:#ffffff;BORDER-TOP:#ffffff 1px solid;BORDER-RIGHT:#ffffff 1px solid" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+<tbody>
+<tr>
+<td>
+<div>
+<table border="0" cellspacing="0" cellpadding="0" width="800">
+<tbody>
+<tr>
+<td valign="bottom">
+<div><center><img style="BORDER-BOTTOM:medium none;BORDER-LEFT:medium none;PADDING-BOTTOM:0px;MARGIN:0px;OUTLINE-STYLE:none;OUTLINE-COLOR:invert;PADDING-LEFT:0px;OUTLINE-WIDTH:medium;WIDTH:450px;PADDING-RIGHT:0px;MAX-WIDTH:800px;min-height:374px;BORDER-TOP:medium none;BORDER-RIGHT:medium none;TEXT-DECORATION:none;PADDING-TOP:0px" border="0" alt="" src="{{items.0.img}}" width="450" height="374"></div>
+<br>
+</td>
+</tr>
+<tr>
+<td style="BORDER-BOTTOM:#061424 1px solid;BACKGROUND-COLOR:#1a5090;BORDER-TOP:#163b68 1px solid" valign="middle" align="center">
+<table style="BORDER-BOTTOM:#1e59a1 1px solid;BACKGROUND-COLOR:#1a5090;BORDER-TOP:#1e59a1 1px solid" border="0" cellspacing="0" cellpadding="0" width="800" bgcolor="#1a5090">
+<tbody>
+<tr>
+<td style="PADDING-BOTTOM:4px;PADDING-LEFT:4px;PADDING-RIGHT:4px;PADDING-TOP:4px" valign="middle" align="center">
+<table style="BORDER-BOTTOM:#103261 1px solid;BORDER-LEFT:#103261 1px solid;BACKGROUND-COLOR:#194a85;BORDER-TOP:#103261 1px solid;BORDER-RIGHT:#103261 1px solid" border="0" cellspacing="0" cellpadding="0" width="588" bgcolor="#194a85">
+<tbody>
+<tr>
+<td width="20"><br>
+</td>
+<td valign="middle" width="254" align="left"><br>
+<table style="LINE-HEIGHT:100%" border="0" cellspacing="0" cellpadding="0" width="254">
+<tbody>
+<tr>
+<td style="BACKGROUND-COLOR:#194a85;FONT-FAMILY:Arial;COLOR:#ffffff;FONT-SIZE:26px;FONT-WEIGHT:bold" colspan="3" align="center">
+<div><span style="FONT-SIZE:18px"> {{items.0.sd}}</span>
+</div>
+<br>
+</td>
+</tr>
+<tr>
+<td width="150" align="center">
+<div>
+<div style="BORDER-BOTTOM:#1e579c 4px solid;BORDER-LEFT:#1e579c 4px solid;PADDING-BOTTOM:6px;BACKGROUND-COLOR:#c0cbd7;PADDING-LEFT:0px;PADDING-RIGHT:0px;BORDER-TOP:#1e579c 4px solid;BORDER-RIGHT:#1e579c 4px solid;PADDING-TOP:6px">
+<a href="/pick/{{items.0.parent_id}}/0" onclick="mixpanel.track('/pick/{{items.0.parent_id}}/0');return true;"><span style="COLOR:#333399">VIEW THIS DEAL</span></div></a>
+</div>
+</td>
+<td width="10"><br>
+</td>
+<td width="94">
+<table border="0" cellspacing="0" cellpadding="0" height="23">
+<tbody>
+<tr>
+<td valign="middle" width="12" align="right"><img style="BORDER-BOTTOM:medium none;BORDER-LEFT:medium none;OUTLINE-STYLE:none;OUTLINE-COLOR:invert;OUTLINE-WIDTH:medium;DISPLAY:inline;VERTICAL-ALIGN:middle;BORDER-TOP:medium none;BORDER-RIGHT:medium none;TEXT-DECORATION:none" src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pricetag_left.png">
+</td>
+<td valign="middle" width="50" align="left">
+<div style="PADDING-BOTTOM:2px;LINE-HEIGHT:150%;BACKGROUND-COLOR:#2c6cbd;PADDING-LEFT:7px;FONT-FAMILY:Arial;COLOR:#ffffff;FONT-SIZE:12px;BORDER-TOP:#337ed9 1px solid;PADDING-TOP:1px">
+<strong>$30</strong></div>
+</td>
+<td valign="middle" width="2" align="left"><img style="BORDER-BOTTOM:medium none;BORDER-LEFT:medium none;OUTLINE-STYLE:none;OUTLINE-COLOR:invert;OUTLINE-WIDTH:medium;DISPLAY:inline;VERTICAL-ALIGN:middle;BORDER-TOP:medium none;BORDER-RIGHT:medium none;TEXT-DECORATION:none" src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pricetag_right.png">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+</td>
+<td width="15"><br>
+</td>
+<td valign="middle" width="10" align="center"><img style="BORDER-BOTTOM:medium none;BORDER-LEFT:medium none;OUTLINE-STYLE:none;OUTLINE-COLOR:invert;OUTLINE-WIDTH:medium;BORDER-TOP:medium none;BORDER-RIGHT:medium none;TEXT-DECORATION:none" src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/contentsplitter.png">
+</td>
+<td width="15"><br>
+</td>
+<td style="LINE-HEIGHT:150%;FONT-FAMILY:Arial;COLOR:#ffffff;FONT-SIZE:12px" valign="middle" width="254" align="left">
+<br>
+<div style="BACKGROUND-COLOR:#194a85">{{items.0.description}}<br>
+<br>
+StyleUp's bargained price:<strong> {{items.0.price}}<span style="COLOR:#ff0000"> </span><span style="COLOR:#cc3333"><span style="BACKGROUND-COLOR:#ffffff">({{items.0.discount}}% Off)</span></span></strong></div>
+<br>
+</td>
+<td width="20"><br>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center"><br>
+<br>
+<div>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="20"><br>
+</td>
+<td style="WIDTH:170px" valign="top" width="170" align="left">
+<div><img style="BORDER-BOTTOM:#9b9b9b 1px solid;BORDER-LEFT:#dedede 1px solid;PADDING-BOTTOM:5px;MARGIN:0px;OUTLINE-STYLE:none;OUTLINE-COLOR:invert;PADDING-LEFT:5px;OUTLINE-WIDTH:medium;WIDTH:160px;PADDING-RIGHT:5px;MAX-WIDTH:160px!important;min-height:160px;BORDER-TOP:medium none;BORDER-RIGHT:#dedede 1px solid;TEXT-DECORATION:none;PADDING-TOP:5px" border="0" alt="" src="{{items.1.img}}" width="160" height="160"></div>
+<br>
+<br>
+<div style="PADDING-BOTTOM:5px;LINE-HEIGHT:100%;FONT-FAMILY:Arial;COLOR:#2875d1;FONT-SIZE:14px;FONT-WEIGHT:bold">
+{{items.1.name}}</div>
+<div style="PADDING-BOTTOM:10px;LINE-HEIGHT:125%;FONT-FAMILY:Arial;COLOR:#45741b;FONT-SIZE:12px;FONT-WEIGHT:normal">
+StyleUp's&nbsp;bargained price: <strong>${{items.1.price}}<span style="COLOR:#ff0000"> ({{items.1.discount}}% Off) </span></strong>&nbsp;</div>
+<div style="LINE-HEIGHT:125%;FONT-FAMILY:Georgia;COLOR:#2b2b2b;FONT-SIZE:12px">{{items.1.description}}</div>
+</td>
+<td width="20"><br>
+</td>
+<td style="WIDTH:170px" valign="top" width="170" align="left">
+<div><img style="BORDER-BOTTOM:#9b9b9b 1px solid;BORDER-LEFT:#dedede 1px solid;PADDING-BOTTOM:5px;MARGIN:0px;OUTLINE-STYLE:none;OUTLINE-COLOR:invert;PADDING-LEFT:5px;OUTLINE-WIDTH:medium;WIDTH:160px;PADDING-RIGHT:5px;MAX-WIDTH:160px!important;min-height:160px;BORDER-TOP:medium none;BORDER-RIGHT:#dedede 1px solid;TEXT-DECORATION:none;PADDING-TOP:5px" border="0" alt="" src="{{items.2.img}}" width="160" height="160"></div>
+<br>
+<br>
+<div style="PADDING-BOTTOM:5px;LINE-HEIGHT:100%;FONT-FAMILY:Arial;COLOR:#2875d1;FONT-SIZE:14px;FONT-WEIGHT:bold">
+{{items.2.name}}&nbsp; </div>
+<div style="PADDING-BOTTOM:10px;LINE-HEIGHT:125%;FONT-FAMILY:Arial;COLOR:#45741b;FONT-SIZE:12px;FONT-WEIGHT:normal">
+StyleUp's bargained price:<strong> ${{items.2.price}}</strong> <strong><span style="COLOR:#ff0000">({{items.2.discount}}% Off)</span></strong>&nbsp;</div>
+<div style="LINE-HEIGHT:125%;FONT-FAMILY:Georgia;COLOR:#2b2b2b;FONT-SIZE:12px">{{items.2.description}}</div>
+</td>
+<td width="20"><br>
+</td>
+<td style="WIDTH:170px" valign="top" width="170" align="left">
+<div><img style="BORDER-BOTTOM:#9b9b9b 1px solid;BORDER-LEFT:#dedede 1px solid;PADDING-BOTTOM:5px;MARGIN:0px;OUTLINE-STYLE:none;OUTLINE-COLOR:invert;PADDING-LEFT:5px;OUTLINE-WIDTH:medium;WIDTH:160px;PADDING-RIGHT:5px;MAX-WIDTH:160px!important;min-height:160px;BORDER-TOP:medium none;BORDER-RIGHT:#dedede 1px solid;TEXT-DECORATION:none;PADDING-TOP:5px" border="0" alt="" src="{{items.3.img}}" width="160" height="160"></div>
+<br>
+<br>
+<div style="PADDING-BOTTOM:5px;LINE-HEIGHT:100%;FONT-FAMILY:Arial;COLOR:#2875d1;FONT-SIZE:14px;FONT-WEIGHT:bold">
+District Threads Cap</div>
+<div style="PADDING-BOTTOM:10px;LINE-HEIGHT:125%;FONT-FAMILY:Arial;COLOR:#45741b;FONT-SIZE:12px;FONT-WEIGHT:normal">
+<p>StyleUp's bargained price: <strong>${{items.3.price}}</strong> <span style="COLOR:#ff0000"><strong>({{items.2.discount}}% Off)</strong></span></p>
+</div>
+<div style="LINE-HEIGHT:125%;FONT-FAMILY:Georgia;COLOR:#2b2b2b;FONT-SIZE:12px">{{items.3.description}} </div>
+</td>
+<td width="20"><br>
+</td>
+</tr>
+<tr>
+<td width="20"><br>
+</td>
+<td valign="top" width="170" align="left"><br>
+<div>
+<div style="BORDER-BOTTOM:#bbc5ce 1px solid;TEXT-ALIGN:center;BORDER-LEFT:#bbc5ce 1px solid;PADDING-BOTTOM:4px;BACKGROUND-COLOR:#dde3ea;PADDING-LEFT:0px;WIDTH:60%;PADDING-RIGHT:0px;FONT-FAMILY:Arial;COLOR:#2c6ebd;FONT-SIZE:11px;BORDER-TOP:#bbc5ce 1px solid;FONT-WEIGHT:bold;BORDER-RIGHT:#bbc5ce 1px solid;TEXT-DECORATION:none;PADDING-TOP:4px">
+<a href="/pick/{{items.1.parent_id}}/1" onclick="mixpanel.track('/pick/{{items.1.parent_id}}/1');return true;"><span style="COLOR:#333399">VIEW THIS DEAL</span></div></a></div>
+</div>
+</td>
+<td width="20"><br>
+</td>
+<td valign="top" width="170" align="left"><br>
+<div>
+<div style="BORDER-BOTTOM:#bbc5ce 1px solid;TEXT-ALIGN:center;BORDER-LEFT:#bbc5ce 1px solid;PADDING-BOTTOM:4px;BACKGROUND-COLOR:#dde3ea;PADDING-LEFT:0px;WIDTH:60%;PADDING-RIGHT:0px;FONT-FAMILY:Arial;COLOR:#2c6ebd;FONT-SIZE:11px;BORDER-TOP:#bbc5ce 1px solid;FONT-WEIGHT:bold;BORDER-RIGHT:#bbc5ce 1px solid;TEXT-DECORATION:none;PADDING-TOP:4px">
+<a href="/pick/{{items.2.parent_id}}/2" onclick="mixpanel.track('/pick/{{items.2.parent_id}}/2');return true;"><span style="COLOR:#333399">VIEW THIS DEAL</span></div></a></div>
+</div>
+</td>
+<td width="20"><br>
+</td>
+<td valign="top" width="170" align="left"><br>
+<div>
+<div style="BORDER-BOTTOM:#bbc5ce 1px solid;TEXT-ALIGN:center;BORDER-LEFT:#bbc5ce 1px solid;PADDING-BOTTOM:4px;BACKGROUND-COLOR:#dde3ea;PADDING-LEFT:0px;WIDTH:60%;PADDING-RIGHT:0px;FONT-FAMILY:Arial;COLOR:#2c6ebd;FONT-SIZE:11px;BORDER-TOP:#bbc5ce 1px solid;FONT-WEIGHT:bold;BORDER-RIGHT:#bbc5ce 1px solid;TEXT-DECORATION:none;PADDING-TOP:4px">
+<a href="/pick/{{items.3.parent_id}}/3" onclick="mixpanel.track('/pick/{{items.3.parent_id}}/3');return true;"><span style="COLOR:#333399">VIEW THIS DEAL</span></div></a></div>
+</div>
+</td>
+<td width="20"><br>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+</div>
+<div>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="20"><br>
+</td>
+<td style="WIDTH:170px" valign="top" width="170" align="left">
+<div><img style="BORDER-BOTTOM:#9b9b9b 1px solid;BORDER-LEFT:#dedede 1px solid;PADDING-BOTTOM:5px;MARGIN:0px;OUTLINE-STYLE:none;OUTLINE-COLOR:invert;PADDING-LEFT:5px;OUTLINE-WIDTH:medium;WIDTH:160px;PADDING-RIGHT:5px;MAX-WIDTH:160px!important;min-height:160px;BORDER-TOP:medium none;BORDER-RIGHT:#dedede 1px solid;TEXT-DECORATION:none;PADDING-TOP:5px" border="0" alt="" src="{{items.4.img}}" width="160" height="160"></div>
+<br>
+<br>
+<div style="PADDING-BOTTOM:5px;LINE-HEIGHT:100%;FONT-FAMILY:Arial;COLOR:#2875d1;FONT-SIZE:14px;FONT-WEIGHT:bold">
+{{items.4.name}}<br>
+</div>
+<div style="PADDING-BOTTOM:10px;LINE-HEIGHT:125%;FONT-FAMILY:Arial;COLOR:#45741b;FONT-SIZE:12px;FONT-WEIGHT:normal">
+StyleUp's bargained price: <strong>${{items.4.price}} <span style="COLOR:#ff0000">(${{items.4.discount}} Off)</span></strong>&nbsp;</div>
+<div style="LINE-HEIGHT:125%;FONT-FAMILY:Georgia;COLOR:#2b2b2b;FONT-SIZE:12px">
+{{items.4.description}}</div>
+</td>
+<td width="20"><br>
+</td>
+<td style="WIDTH:170px" valign="top" width="170" align="left">
+<div><img style="BORDER-BOTTOM:#9b9b9b 1px solid;BORDER-LEFT:#dedede 1px solid;PADDING-BOTTOM:5px;MARGIN:0px;OUTLINE-STYLE:none;OUTLINE-COLOR:invert;PADDING-LEFT:5px;OUTLINE-WIDTH:medium;WIDTH:160px;PADDING-RIGHT:5px;MAX-WIDTH:160px!important;min-height:96px;BORDER-TOP:medium none;BORDER-RIGHT:#dedede 1px solid;TEXT-DECORATION:none;PADDING-TOP:5px" border="0" alt="" src="{{items.5.img}}" width="160" height="96"></div>
+<br>
+<br>
+<div style="PADDING-BOTTOM:5px;LINE-HEIGHT:100%;FONT-FAMILY:Arial;COLOR:#2875d1;FONT-SIZE:14px;FONT-WEIGHT:bold">
+{{items.5.name}}</div>
+<div style="PADDING-BOTTOM:10px;LINE-HEIGHT:125%;FONT-FAMILY:Arial;COLOR:#45741b;FONT-SIZE:12px;FONT-WEIGHT:normal">
+StyleUp's bargained price: <strong>${{items.5.price}}</strong> <span style="COLOR:#ff0000"><strong>({{items.5.discount}} Off)</strong></span>&nbsp;</div>
+<div style="LINE-HEIGHT:125%;FONT-FAMILY:Georgia;COLOR:#2b2b2b;FONT-SIZE:12px">
+{{items.5.description}}</div>
+</td>
+<td width="20"><br>
+</td>
+<td style="WIDTH:170px" valign="top" width="170" align="left">
+<div><img style="BORDER-BOTTOM:#9b9b9b 1px solid;BORDER-LEFT:#dedede 1px solid;PADDING-BOTTOM:5px;MARGIN:0px;OUTLINE-STYLE:none;OUTLINE-COLOR:invert;PADDING-LEFT:5px;OUTLINE-WIDTH:medium;WIDTH:160px;PADDING-RIGHT:5px;MAX-WIDTH:160px!important;min-height:202px;BORDER-TOP:medium none;BORDER-RIGHT:#dedede 1px solid;TEXT-DECORATION:none;PADDING-TOP:5px" border="0" alt="" src="{{items.6.img}}" width="160" height="202"></div>
+<br>
+<br>
+<div style="PADDING-BOTTOM:5px;LINE-HEIGHT:100%;FONT-FAMILY:Arial;COLOR:#2875d1;FONT-SIZE:14px;FONT-WEIGHT:bold">
+{{items.6.name}}<br>
+</div>
+<div style="PADDING-BOTTOM:10px;LINE-HEIGHT:125%;FONT-FAMILY:Arial;COLOR:#45741b;FONT-SIZE:12px;FONT-WEIGHT:normal">
+StyleUp's bargained price: <strong>${{items.6.price}} <span style="COLOR:#ff0000">({{items.6.discount}}% Off)</span></strong>&nbsp;</div>
+<div style="LINE-HEIGHT:125%;FONT-FAMILY:Georgia;COLOR:#2b2b2b;FONT-SIZE:12px">
+{{items.6.description}}<br>
+</div>
+</td>
+<td width="20"><br>
+</td>
+</tr>
+<tr>
+<td width="20"><br>
+</td>
+<td valign="top" width="170" align="left"><br>
+<div>
+<div style="BORDER-BOTTOM:#bbc5ce 1px solid;TEXT-ALIGN:center;BORDER-LEFT:#bbc5ce 1px solid;PADDING-BOTTOM:4px;BACKGROUND-COLOR:#dde3ea;PADDING-LEFT:0px;WIDTH:60%;PADDING-RIGHT:0px;FONT-FAMILY:Arial;COLOR:#2c6ebd;FONT-SIZE:11px;BORDER-TOP:#bbc5ce 1px solid;FONT-WEIGHT:bold;BORDER-RIGHT:#bbc5ce 1px solid;TEXT-DECORATION:none;PADDING-TOP:4px">
+<a href="/pick/{{items.4.parent_id}}/4" onclick="mixpanel.track('/pick/{{items.4.parent_id}}/4');return true;"><span style="COLOR:#333399">VIEW THIS DEAL</span></div></a></div>
+</div>
+</td>
+<td width="20"><br>
+</td>
+<td valign="top" width="170" align="left"><br>
+<div>
+<div style="BORDER-BOTTOM:#bbc5ce 1px solid;TEXT-ALIGN:center;BORDER-LEFT:#bbc5ce 1px solid;PADDING-BOTTOM:4px;BACKGROUND-COLOR:#dde3ea;PADDING-LEFT:0px;WIDTH:60%;PADDING-RIGHT:0px;FONT-FAMILY:Arial;COLOR:#2c6ebd;FONT-SIZE:11px;BORDER-TOP:#bbc5ce 1px solid;FONT-WEIGHT:bold;BORDER-RIGHT:#bbc5ce 1px solid;TEXT-DECORATION:none;PADDING-TOP:4px">
+<a href="/pick/{{items.5.parent_id}}/5" onclick="mixpanel.track('/pick/{{items.5.parent_id}}/5');return true;"><span style="COLOR:#333399">VIEW THIS DEAL</span></div></a></div>
+</div>
+</td>
+<td width="20"><br>
+</td>
+<td valign="top" width="170" align="left"><br>
+<div>
+<div style="BORDER-BOTTOM:#bbc5ce 1px solid;TEXT-ALIGN:center;BORDER-LEFT:#bbc5ce 1px solid;PADDING-BOTTOM:4px;BACKGROUND-COLOR:#dde3ea;PADDING-LEFT:0px;WIDTH:60%;PADDING-RIGHT:0px;FONT-FAMILY:Arial;COLOR:#2c6ebd;FONT-SIZE:11px;BORDER-TOP:#bbc5ce 1px solid;FONT-WEIGHT:bold;BORDER-RIGHT:#bbc5ce 1px solid;TEXT-DECORATION:none;PADDING-TOP:4px">
+<a href="/pick/{{items.6.parent_id}}/6" onclick="mixpanel.track('/pick/{{items.6.parent_id}}/6');return true;"><span style="COLOR:#333399">VIEW THIS DEAL</span></div></a></div>
+</div>
+</td>
+<td width="20"><br>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+</div>
+<br>
+</td>
+</tr>
+</tbody>
+</table>
+{% endblock %}

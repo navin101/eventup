@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    background-color: #eeeeee;
+    font-family: Georgia,Arial,Tahoma,Verdana;
+    font-size: 9px;
+}
+
+.splash_info {
+    border-spacing: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.album_combo {
+    display:inline-block;
+    xfloat: left; 
+    margin: 0px 10px 10px 10px;
+}
+
+.album_frame {
+    height: 111px; 
+    width: 167px;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+.album_title {
+    font-size: .8em;
+    max-width: 167px;
+}
+
+.album_photo {
+    max-width: 165px;
+    height: 109px;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    display: block;
+    border: 1px solid white;
+}
+
+.login { 
+    width:auto; 
+    padding:25px 0 0 0; 
+    margin: 5px 0 0 0 ; 
+    float:right;
+}
+
+.pick_buttons {
+    padding: 4px;
+}
+
+.pick_button {
+    color: #cccccc;
+}
+
+.pick_photo_frame {
+    padding: 2px;
+    background-color: #CCCCCC;
+    margin: 10px;
+}
+
+.pick_photo {
+    max-height: 300px;
+}
+
+.pick_buy {
+    font-size: 2em;
+}
+
+.feedback {
+    margin: 8px;
+    font-size: .9em;
+}
+
+.ui-widget {
+    font-size: .9em;
+}
+
+.title_pre {
+    text-align: center;
+    font-size: 2.0em;
+    BORDER:#1e579c 2px solid;
+    BACKGROUND-COLOR:#c0cbd7;
+    PADDING: 12px;
+    vertical-align: middle;
+    margin: 6px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.button {
+    border: 1px solid #660000;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 7px;
+    color: black;
+    background: red;
+    margin: 4px;
+    text-decoration: none;
+}
+
+.button_frame {
+    text-align: center;
+    width: 100%;
+    border: 1px solid #cccccc;
+    padding: 20px;
+}
+
+.button_instructions {
+}

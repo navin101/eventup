@@ -1,0 +1,1 @@
+alter table home_post_icons drop constraint home_post_icons_post_id_key;

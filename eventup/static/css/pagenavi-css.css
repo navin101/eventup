@@ -1,0 +1,7 @@
+/*=== PageNavi. ===*/
+.pagenavi { padding:10px 0; clear:both; font-size:12px; margin:10px 0 0 0; text-align:right; color:#868686; float:left; width:200px;}
+.pagenavi a, .pagenavi .current { float:left; display:block; color:#868686; margin-right:3px;   padding:2px 8px; text-decoration:none; background:none; text-align:center;}
+.pagenavi a:hover, .pagenavi .current  {  text-transform:none; font-weight:normal;border:1px solid #cdd3d5;  background:#0fa6e6;  color:#fff;    padding:2px 8px;}
+.pagenavi .current { float:left;}
+.pagenavi .current { margin-top:0;  text-transform:none; font-weight:normal; border:1px solid #cdd3d5; background:#0fa6e6;  color:#fff;}
+.pagenavi .pages { margin-top:4px; float:right;   color:#8d8d8d; }

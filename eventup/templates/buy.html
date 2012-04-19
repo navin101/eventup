@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}{{item.name}}{% endblock %}
+{% block title_page %}{{item.name}}{% endblock %}
+
+{% block content %}
+
+<script>
+
+$(function() {
+    $( "#radio" ).buttonset();
+    $( "#radio1" ).button({ icons: {primary:'ui-icon-heart'} });
+    $( "#radio2" ).button({ icons: {primary:'ui-icon-cancel'} });
+    $( "#buy" ).button();
+});
+
+mixpanel.track('/buy/{{item.parent_id}}/{{item.id}}');
+
+</script>
+
+<table width="100%" class="splash_info">
+<tr>
+<td class="pick_photo_frame">
+    <img src="{{item.img}}" class="pick_photo">
+
+    <center>
+    <div id="radio" class="pick_buttons">
+        <input type="radio" id="radio1" name="radio"/><label for="radio1">Love It!</label>
+        <input type="radio" id="radio2" name="radio"/><label for="radio2">Meh...</label>
+    </div>
+    <div class="feedback">
+        Feedback helps us know how to make better recommendations in the future.
+    </div>
+
+</td>
+<td valign="top" width="100%">
+Sorry, there was an error in purchase. 
+<br><br>
+Please <a href="/pick/{{item.parent_id}}/{{item.id}}">click here</a> to continue.
+</td>
+</tr>
+</table>
+
+{% endblock %}
